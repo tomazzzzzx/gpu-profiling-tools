@@ -1,5 +1,17 @@
 # Gpu Profiling Tools
 
-GPU profiling and performance analysis tools for ROCm and CUDA workloads.
+GPU profiling and performance analysis tools for ROCm/HIP.
 
-## License: Apache 2.0
+## Tools
+- **Kernel Profiler**: Per-kernel timing, occupancy, memory throughput
+- **Memory Analyzer**: Allocation patterns, peak usage, fragmentation
+- **Timeline Visualizer**: Chrome trace export for async ops
+- **Bottleneck Detector**: Compute vs memory bound classification
+
+## Usage
+```bash
+python profile.py --app ./train.py --output trace.json
+```
+
+## License
+MIT
